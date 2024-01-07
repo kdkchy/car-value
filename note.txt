@@ -1,0 +1,14 @@
+User entity import AFterInsert, AfterRemove, AfterUpdate
+
+@After...
+logInsert(){
+    console.log('inserted user with id', this.id)
+}
+
+@AfterRemove
+logRemove...
+
+@AfterUpdate
+logUpdate...
+
+----

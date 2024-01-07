@@ -1,0 +1,59 @@
+### Create a new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email" : "kadek.chy@gmail.com",
+    "password" : "password"
+}
+
+### sign in user
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email" : "kadek.chy@gmail.com",
+    "password" : "password"
+}
+
+### Who am i
+
+GET http://localhost:3000/auth/whoami
+Content-Type: application/json
+
+### sign out
+
+POST http://localhost:3000/auth/signout
+Content-Type: application/json
+
+### Find a particular user with ID
+
+GET http://localhost:3000/auth/3
+Content-Type: application/json
+
+### Find all user with given email
+
+GET http://localhost:3000/auth?email=email@gmail.com
+Content-Type: application/json
+
+### Delete user from given id
+
+DELETE http://localhost:3000/auth/90
+
+### Update user from given id
+
+PATCH http://localhost:3000/auth/90
+Content-Type: application/json
+
+{
+    "email" : "update-again@gmail.com",
+    "password" : "asdasdasd1"
+}
+
+### set session
+GET http://localhost:3000/auth/colors/red
+Content-Type: application/json
+
+### get session
+GET http://localhost:3000/auth/colors
+Content-Type: application/json
